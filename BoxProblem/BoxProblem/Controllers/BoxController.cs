@@ -17,9 +17,71 @@ namespace BoxProblem.Controllers
             service = new BoxService(context);
         }
 
+        // GET: Box
         public IActionResult Index()
+        {
+            return View(service.GetAllBoxes());
+        }
+
+        // GET: Box/Create
+        public ActionResult Create()
         {
             return View();
         }
+
+        // POST: Box/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(BoxInventory box)
+        {
+            if (ModelState.IsValid)
+            {
+                service.AddBox(box);
+                return RedirectToAction("Index");
+            }
+            return View(box);
+        }
+
+        // GET: Box/Edit
+        public ActionResult Edit(int id)
+        {
+            BoxInventory box = service.GetBoxById(id);
+            return View(box);
+        }
+
+        // POST: Box/Edit
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(BoxInventory box)
+        {
+            if (ModelState.IsValid)
+            {
+                service.EditBox(box);
+                return RedirectToAction("Index");
+            }
+            return View(box);
+        }
+
+        // GET: Box/Delete
+        public ActionResult Delete(int id)
+        {
+            BoxInventory box = service.GetBoxById(id);
+            return View(box);
+        }
+
+        // POST: Box/Delete
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            BoxInventory box = service.GetBoxById(id);
+            service.DeleteBox(box);
+            return RedirectToAction("Index");
+        }
+
     }
 }
