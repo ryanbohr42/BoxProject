@@ -2,3 +2,14 @@
     font-family: "Playfair Display", serif; 
 }
 
+.table{
+    font-style: oblique;
+    width: 750px;
+    border-color: grey;
+    border-width: thick;
+    margin: auto;
+    border: dotted;
+    
+}
+
+

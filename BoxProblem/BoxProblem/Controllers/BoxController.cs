@@ -26,7 +26,7 @@ namespace BoxProblem.Controllers
         // GET: Box/Create
         public ActionResult Create()
         {
-            return RedirectToAction("Index", "Create");
+            return View();
         }
 
         // POST: Box/Create
