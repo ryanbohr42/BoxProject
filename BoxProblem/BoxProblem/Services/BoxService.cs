@@ -1,4 +1,5 @@
 ﻿using BoxProblem.Data;
+using BoxProblem.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,30 @@ namespace BoxProblem.Services
         public BoxService(ApplicationDbContext context)
         {
             repository = new BoxRepository(context);
+        }
+
+        public List<BoxInventory> GetAllBoxes()
+        {
+            return repository.GetAllBoxes();
+        }
+
+        public void AddBox(BoxInventory toAdd)
+        {
+            repository.AddBox(toAdd);
+        }
+
+        public void DeleteBox(BoxInventory toDelete)
+        {
+            repository.DeleteBox(toDelete);
+        }
+
+        public void EditBox(BoxInventory toSave)
+        {
+            repository.SaveEdits(toSave);
+        }
+
+        public BoxInventory GetBoxById(int id) {
+            return repository.GetBoxById(id);
         }
     }
 }
