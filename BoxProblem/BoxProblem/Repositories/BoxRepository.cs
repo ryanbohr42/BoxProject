@@ -45,12 +45,14 @@ namespace BoxProblem.Repositories
         public List<BoxInventory> Search(bool? canHoldLiquid, int? volume, int? weight, double? cost)
         {
             var results = dbContext.Boxes.Where
-                (Boxes => Boxes.CanHoldLiquid == canHoldLiquid && 
-                Boxes.Volume <= volume && 
-                Boxes.Weight <= weight && 
-                (Boxes.Cost - cost < 1  && Boxes.Cost - cost > -1));
-
-            return results.ToList();
+                (
+                Boxes => Boxes.Weight <= weight && 
+                Boxes.Volume <= volume &&
+                Boxes.CanHoldLiquid == canHoldLiquid &&                             
+                (Boxes.Cost - cost < 1 || cost - Boxes.Cost < 1)
+                );
+                                    
+            return results.ToList();       
         }
     }
 }
