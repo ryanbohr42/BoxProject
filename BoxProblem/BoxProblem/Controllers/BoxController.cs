@@ -84,9 +84,9 @@ namespace BoxProblem.Controllers
         }
 
         [HttpPost]
-        public ActionResult Search(int? weight, int? volume, bool? canHoldLiquid, double? cost)
+        public ActionResult Search(int? weight, int? volume, bool canHoldLiquid)
         {
-            return View("Index", service.Search(weight, volume, canHoldLiquid, cost ));
+            return View("Index", service.Search(weight, volume, canHoldLiquid));
         }
 
     }
