@@ -8,7 +8,10 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 <div>
-    
+    <form action="~/Employees/Filtered" method="post">
+        <input name="yearsWorked" />
+        <input type="submit" name="submit" />
+    </form>
 </div>
 <table class="table">
     <tr>
