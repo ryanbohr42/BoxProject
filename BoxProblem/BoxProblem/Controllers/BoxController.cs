@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BoxProblem.Data;
+using BoxProblem.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BoxProblem.Controllers
@@ -13,7 +14,7 @@ namespace BoxProblem.Controllers
 
         public BoxController(ApplicationDbContext context)
         {
-            BoxService = new BoxService(context);
+            service = new BoxService(context);
         }
 
         public IActionResult Index()
