@@ -1,4 +1,4 @@
-﻿using BoxProblem.Data;
+using BoxProblem.Data;
 using BoxProblem.Repositories;
 using System;
 using System.Collections.Generic;
