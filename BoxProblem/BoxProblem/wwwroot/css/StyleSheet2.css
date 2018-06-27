@@ -1,2 +1,37 @@
 ﻿body {
+
+
+    font-family: "Playfair Display" serif;
+
 }
+
+div {
+    background-color: white;
+    width: 300px;
+    border: 25px black;
+    padding: 25px;
+    margin: 25px;
+}
+
+.weight {
+    color: #a72057;
+}
+
+.Volume {
+    color: #a72057;
+}
+
+.CanHoldLiquid {
+    color: #a72057;
+}
+
+.Cost {
+    color: #a72057;
+}
+
+.InventoryCount {
+    color: #a72057;
+}
+
+
+
