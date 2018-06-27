@@ -19,7 +19,24 @@ namespace BoxProblem.Controllers
 
         public IActionResult Index()
         {
+            return View(service.GetAllBoxes());
+        }
+
+        public ActionResult Create()
+        {
             return View();
         }
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
+
+        public ActionResult Delete()
+        {
+            return View();
+        }
+
+
     }
 }
