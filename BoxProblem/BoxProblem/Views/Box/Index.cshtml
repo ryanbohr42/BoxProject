@@ -10,12 +10,17 @@
 <div>
     <form action="~/Box/Search" method="post">
         <input name="weight" />
-        <input name="volume" />
+        <input name="volume" />      
+        <input type="hidden" name="canHoldLiquid" value="0" />
         <input name="canHoldLiquid" type="checkbox"/>
-        <input name="cost" />        
+        <input name="cost" type="" />
         <input type="submit" name="submit" />
     </form>
+    <form action="~/Box" method="post">
+        <input type="submit" name="reset" />
+    </form>
 </div>
+
 <table class="table">
     <tr>
         <th>

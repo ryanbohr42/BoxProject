@@ -40,9 +40,9 @@ namespace BoxProblem.Services
             return repository.GetBoxById(id);
         }
 
-        public List<BoxInventory> Search(int? weight, int? volume, bool? canHoldLiquid, double? cost)
+        public List<BoxInventory> Search(int? weight, int? volume, bool? canHoldLiquid)
         {
-            return repository.Search(weight, volume, canHoldLiquid, cost);
+            return repository.Search(weight, volume, canHoldLiquid);
         }
     }
 }
