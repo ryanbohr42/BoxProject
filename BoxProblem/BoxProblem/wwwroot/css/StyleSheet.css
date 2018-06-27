@@ -2,14 +2,30 @@
     font-family: "Playfair Display", serif; 
 }
 
+.Name{
+    font-size: 100px;
+    text-align: center;
+}
+#CreateButton{
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 700px;
+    margin-right: 700px;
+    background-color: darkcyan;
+}
+a{
+    color: white;
+}
 .table{
-    font-style: oblique;
-    width: 750px;
+    font-family: "lato";
+    width: 1000px;
+    height: 500px;
     border-color: grey;
     border-width: thick;
     margin: auto;
-    border: dotted;
-    
+    border: dashed;
+    background-color: #fbea9b;
 }
 
 
