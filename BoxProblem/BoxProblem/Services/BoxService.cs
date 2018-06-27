@@ -1,4 +1,5 @@
 ﻿using BoxProblem.Data;
+using BoxProblem.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,7 @@ namespace BoxProblem.Services
 
         public void EditBox(BoxInventory toSave)
         {
-            repository.EditBox(toSave);
+            repository.SaveEdits(toSave);
         }
 
         public BoxInventory GetBoxById(int id) {
