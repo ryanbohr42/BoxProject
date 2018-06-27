@@ -1,7 +1,37 @@
-﻿
+﻿@model IEnumerable<BoxProblem.Data.BoxInventory>
+
 @{
     ViewData["Title"] = "Index";
 }
-
 <h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div>
+    
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Volume)
+        </th>
+        <th>@Html.DisplayNameFor(model => model.Volume)
+        </th>
+    </tr>
 
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destination)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+        </tr>
+    }
+
+</table>
