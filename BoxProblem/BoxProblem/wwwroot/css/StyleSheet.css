@@ -1,0 +1,126 @@
+﻿body {
+    font-family: "Playfair Display", serif; 
+}
+
+.Title{
+    font-family: "Playfair Display";
+    padding: 5px;
+    margin-top: -25px;
+}
+.Name{
+    font-size: 100px;
+    text-align: center;
+}
+.centereverything{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.btn-center {
+    font-size: 150%;
+    margin-left: -25%;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 125%;
+    background-color: transparent;
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.btn-center:hover {
+    background-position: 0;
+}
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+    .btn:hover, .btn:focus {
+        color: #fff;
+        outline: 0;
+    }
+.Searchbar{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.1submitbutton {
+    font-size: 150%;
+    padding: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.fourth {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 125%;
+    background-color: transparent;
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+    .fourth:hover {
+        background-position: 0;
+    }
+.resetbutton {
+    margin-bottom: 5px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: transparent;
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+
+.resetbutton:hover {
+    background-position: 0;
+}
+.table{
+    font-family: "lato";
+    width: 75%;
+    border-color: grey;
+    border-width: thick;
+    margin: auto;
+    border: dashed;
+}
+.row-bro:hover {
+    background-color: #fbea9b;
+}
+.dl-horizontal{
+    font-size: 20px;
+}
+

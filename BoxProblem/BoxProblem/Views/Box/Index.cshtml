@@ -3,21 +3,34 @@
 @{
     ViewData["Title"] = "Index";
 }
-<h2>Inventory</h2>
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<div>
-    <form action="~/Box/Search" method="post">
-        <input name="weight" type="number" min="0"/>
-        <input name="volume" type="number" min="0"/>
-        <input name="canHoldLiquid" />
-        <input name="cost" type="number" step="any" min="0.0"/>
-        <input type="submit" name="submit" />
-    </form>
-    <form action="~/Box" method="post">
-        <input type="submit" name="submit" value="reset" />
-    </form>
+<div style="margin-left: 6%">
+    <div style="display: inline-block; width: 10%; margin-right: 3%; ">
+        <hr />
+        <hr />
+        <hr />
+    </div>
+    <div style="display: inline-block; border: 3px solid black; transform: translateY(-30px); padding-left:5%; padding-right:5%;">
+        <h2 class="Name">BOX COMPANY</h2>
+    </div>
+    <div style="display: inline-block; width: 10%; margin-left: 3%;">
+        <hr />
+        <hr />
+        <hr />
+    </div>
+</div>
+<div class="centereverything">
+    <button class="btn-center" style="color: black" type="button" onclick="location.href = 'Box/Create';">Create</button>
+    <div class="Searchbar">
+        <form action="~/Box/Search" method="post">
+            <input name="weight" placeholder="Weight (below than input)" type="number" min="0"/>
+            <input name="volume" placeholder="Volume" type="number" min="0"/>
+            <input name="canHoldLiquid" placeholder="Liquid? (True/False)" />
+            <input name="cost" placeholder="Cost (less than input)" type="number" min="0.0"/>
+            <input class="fourth" style="color: black" type="submit" name="Submit" />
+        </form>
+        <form action="~/Box" method="post">
+            <input class="resetbutton" style="color: black" type="submit" name="submit" value="Reset" />
+        </form></div>
 </div>
 <table class="table">
     <tr>
@@ -36,11 +49,14 @@
         <th>
             @Html.DisplayNameFor(model => model.InventoryCount)
     </th>
+        <th>
+            Actions
+        </th>
     </tr>
 
     @foreach (var item in Model)
     {
-    <tr>
+    <tr class="row-bro">
         <td>
             @Html.DisplayFor(modelItem => item.Weight)
         </td>
