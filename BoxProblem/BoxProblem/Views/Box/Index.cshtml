@@ -8,7 +8,16 @@
     @Html.ActionLink("Create", "Create")
 </p>
 <div>
-    
+    <form action="~/Box/Search" method="post">
+        <input name="weight" />
+        <input name="volume" />
+        <input name="canHoldLiquid" />
+        <input name="cost" />
+        <input type="submit" name="submit" />
+    </form>
+    <form action="~/Box" method="post">
+        <input type="submit" name="submit" value="reset" />
+    </form>
 </div>
 <table class="table">
     <tr>
