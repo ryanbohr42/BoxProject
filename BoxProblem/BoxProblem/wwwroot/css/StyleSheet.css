@@ -5,6 +5,7 @@
 .Name{
     font-size: 100px;
     text-align: center;
+    text-shadow: -4px 1px gray;
 }
 .btn-center {
     font-size: 200%;
