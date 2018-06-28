@@ -3,23 +3,6 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div style="margin-left: 6%">
-    <div style="display: inline-block; width: 10%; margin-right: 3%; ">
-        <hr />
-        <hr />
-        <hr />
-    </div>
-    <div style="display: inline-block; border: 3px solid black; transform: translateY(-30px); padding-left:5%; padding-right:5%;">
-        <h2 class="Name">BOX COMPANY</h2>
-    </div>
-    <div style="display: inline-block; width: 10%; margin-left: 3%;">
-        <hr />
-        <hr />
-        <hr />
-    </div>
-</div>
-<div class="btn-center">
-    <button type="button" class="buttons" onclick="location.href = 'Box/Create';">Create</button>
 <div class="Title">
 <h2 class="Name">Box Company</h2></div>
 <div class="centereverything">
@@ -35,19 +18,6 @@
         <form action="~/Box" method="post">
             <input class="resetbutton" style="color: black" type="submit" name="submit" value="Reset" />
     </div>
-<div class="Searchbar">
-    <form action="~/Box/Search" method="post">
-        <input name="weight" type="number" min="0"/>
-        <input name="volume" type="number" min="0"/>
-        <input name="canHoldLiquid" />
-<<<<<<<<< Temporary merge branch 1
-        <input name="cost" />
-        <div class="submitbutton">
-        <input type="submit" name="submit" /></div>
-=========
-        <input name="cost" type="number" step="any" min="0.0"/>
-        <input type="submit" name="submit" />
->>>>>>>>> Temporary merge branch 2
     </form>
 </div>
 <table class="table">
