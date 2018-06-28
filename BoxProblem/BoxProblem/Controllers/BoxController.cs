@@ -83,5 +83,11 @@ namespace BoxProblem.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
+        public ActionResult Search(int? weight, int? volume, bool? canHoldLiquid, double? cost)
+        {
+            return View("Index", service.Search(weight, volume, canHoldLiquid, cost));
+        }
+
     }
 }
