@@ -4,16 +4,17 @@
     ViewData["Title"] = "Index";
 }
 <h2 class="Name">Box Company</h2>
-<p id="CreateButton" style="color: white">
-    @Html.ActionLink("Create", "Create")
-</p>
-<div>
+<div class="btn-center">
+    <button type="button" class="buttons" onclick="location.href = 'Box/Create';">Create</button>
+    </div>
+<div class="Searchbar">
     <form action="~/Box/Search" method="post">
         <input name="weight" />
         <input name="volume" />
         <input name="canHoldLiquid" />
         <input name="cost" />
-        <input type="submit" name="submit" />
+        <div class="submitbutton">
+        <input type="submit" name="submit" /></div>
     </form>
     <form action="~/Box" method="post">
         <input type="submit" name="submit" value="reset" />
