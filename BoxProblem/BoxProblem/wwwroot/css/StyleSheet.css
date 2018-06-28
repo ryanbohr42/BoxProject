@@ -121,4 +121,8 @@
 .dl-horizontal{
     font-size: 20px;
 }
-
+.line{
+    height:2px;
+    border: none;
+    background-color: black;
+}
