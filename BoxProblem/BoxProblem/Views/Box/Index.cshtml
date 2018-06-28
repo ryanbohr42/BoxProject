@@ -9,10 +9,10 @@
 </p>
 <div>
     <form action="~/Box/Search" method="post">
-        <input name="weight" />
-        <input name="volume" />
+        <input name="weight" type="number" min="0"/>
+        <input name="volume" type="number" min="0"/>
         <input name="canHoldLiquid" />
-        <input name="cost" />
+        <input name="cost" type="number" step="any" min="0.0"/>
         <input type="submit" name="submit" />
     </form>
     <form action="~/Box" method="post">
