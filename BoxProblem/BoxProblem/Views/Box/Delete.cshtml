@@ -3,19 +3,31 @@
 @{
     ViewData["Title"] = "Delete";
 }
-<h2>Delete</h2>
+<div style="margin-left: 4%">
+    <div style="display: inline-block; width: 25%; margin-right: 3%; ">
+        <hr />
+        <hr />
+        <hr />
+    </div>
+    <div style="display: inline-block; border: 3px solid black; transform: translateY(-30px); padding-left:5%; padding-right:5%;">
+        <h2 class="Name">DELETE</h2>
+    </div>
+    <div style="display: inline-block; width: 25%; margin-left: 3%;">
+        <hr />
+        <hr />
+        <hr />
+    </div>
+</div>
 
-<h3>Are you sure you want to delete this box?</h3
+<h3 style="margin-left:34%">Are you sure you want to delete this box?</h3
 >
-<div>
-    <h4>Box</h4>
-    <hr />
-    <dl class="dl-horizontal">
+<div style="margin-left: 37%; color: #a72057">
+    <dl class="dl-horizontal" >
         <dt>
             @Html.DisplayNameFor(model => model.Weight)
         </dt>
 
-            <dd>
+            <dd style="color: black; margin-bottom: 15px;">
                 @Html.DisplayFor(model => model.Weight)
             </dd>
 
@@ -23,7 +35,7 @@
             @Html.DisplayNameFor(model => model.Volume)
         </dt>
             
-            <dd>
+            <dd style="color: black; margin-bottom: 15px;">
                 @Html.DisplayFor(model => model.Volume)
             </dd>
 
@@ -31,7 +43,7 @@
             @Html.DisplayNameFor(model => model.CanHoldLiquid)
         </dt>
 
-            <dd>
+            <dd style="color: black; margin-bottom: 15px;">
                 @Html.DisplayFor(model => model.CanHoldLiquid)
             </dd>
 
@@ -39,7 +51,7 @@
             @Html.DisplayNameFor(model => model.Cost)
         </dt>
 
-            <dd>
+            <dd style="color: black; margin-bottom: 15px;">
                 @Html.DisplayFor(model => model.Cost)
             </dd>
 
@@ -47,14 +59,14 @@
             @Html.DisplayNameFor(model => model.InventoryCount)
         </dt>
 
-            <dd>
+            <dd style="color: black; margin-bottom: 15px;">
                 @Html.DisplayFor(model => model.InventoryCount)
             </dd>
         <dt>
             @Html.DisplayNameFor(model => model.CreatedAt)
         </dt>
 
-            <dd>
+            <dd style="color: black; margin-bottom: 15px;">
                 @Html.DisplayFor(model => model.CreatedAt)
             </dd>
     </dl>
@@ -69,3 +81,4 @@
     </div>
     }
 </div>
+<hr style="width:75%"/>
