@@ -1,7 +1,4 @@
-﻿body {
-    font-family: "Playfair Display", serif;
-    color: darkslateblue;
-}
+﻿
 
 #h4 {
     color: blue;
@@ -9,8 +6,9 @@
 }
 
 
-.huah {
+.form-group {
     padding: 10px;
+    color: purple;
 }
 
 

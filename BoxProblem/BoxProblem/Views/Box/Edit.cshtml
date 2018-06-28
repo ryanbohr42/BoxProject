@@ -4,62 +4,114 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
-<div class="form-horizontal">
-    <h4>Box</h4>
-    <hr />
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    @Html.HiddenFor(model => model.Id)
+    <link rel = "stylesheet" href = "StyleSheet2.css" />
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Weight, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Weight, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Weight, "", new { @class = "text-danger" })
-        </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Volume, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Volume, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Volume, "", new { @class = "text-danger" })
+    <div class="form-horizontal">
+
+        <br/>
+
+        <div>
+            <h4 align="center" font-family="Playfair Display" , serif;>EDIT</h4>
         </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(model => model.CanHoldLiquid, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.CanHoldLiquid, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.CanHoldLiquid, "", new { @class = "text-danger" })
+
+        <br/>
+        <br/>
+        <br/>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <br/>
+
+        <div class="form-group">
+            <div style=" color: #a72057">
+
+                @Html.LabelFor(model => model.Weight, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Weight, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Weight, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(model => model.Cost, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Cost, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })
+
+        <br/>
+        <br/>
+
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.Volume, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Volume, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Volume, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(model => model.InventoryCount, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.InventoryCount, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.InventoryCount, "", new { @class = "text-danger" })
+
+        <br/>
+        <br/>
+
+
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.CanHoldLiquid, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.CanHoldLiquid, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CanHoldLiquid, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Save" class="btn btn-default" />
+
+        <br/>
+        <br/>
+
+
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.Cost, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cost, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
+
+        <br/>
+        <br/>
+
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.InventoryCount, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.InventoryCount, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.InventoryCount, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="SAVE" class="btn btn-default" style="background-color: #66a7a7; color: white " />
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
     </div>
-</div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("BACK TO LIST", "Index")
 </div>
+
+<hr style="border-top: dotted 1px; margin-left: 80px; margin-right: 80px " />
