@@ -1,11 +1,13 @@
 ﻿body {
-
-
-    font-family: "Playfair Display" serif;
-
+    font-family: "Playfair Display", serif;
+    color: darkslateblue;
 }
 
-div {
+#h4 {
+    color: blue;
+}
+
+#header {
     background-color: white;
     width: 300px;
     border: 25px black;
@@ -14,7 +16,7 @@ div {
 }
 
 .weight {
-    color: #a72057;
+    color: aqua;
 }
 
 .Volume {
