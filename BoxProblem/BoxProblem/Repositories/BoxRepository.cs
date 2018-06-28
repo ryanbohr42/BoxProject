@@ -51,7 +51,7 @@ namespace BoxProblem.Repositories
                 &&
                 (Boxes.CanHoldLiquid == canHoldLiquid || canHoldLiquid == null)
                 &&
-                ((Boxes.Cost - cost < 1 || cost - Boxes.Cost < 1) || cost == null) 
+                ((Boxes.Cost - cost < 1 && cost - Boxes.Cost < 1) || cost == null) 
                 ); 
             return results.ToList();       
         }
