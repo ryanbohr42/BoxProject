@@ -3,21 +3,21 @@
 @{
     ViewData["Title"] = "Index";
 }
-<h2 class="Name">Box Company</h2>
-<div class="btn-center">
-    <button type="button" class="buttons" onclick="location.href = 'Box/Create';">Create</button>
+<div class="Title">
+<h2 class="Name">Box Company</h2></div>
+<div class="centereverything">
+    <button class="btn-center" style="color: black" type="button" onclick="location.href = 'Box/Create';">Create</button>
+    <div class="Searchbar">
+        <form action="~/Box/Search" method="post">
+            <input name="weight" placeholder="Weight (below than input)" />
+            <input name="volume" placeholder="Volume" />
+            <input name="canHoldLiquid" placeholder="Liquid? (True/False)" />
+            <input name="cost" placeholder="Cost (less than input)" />
+            <input class="fourth" style="color: black" type="submit" name="Submit" />
+        </form>
+        <form action="~/Box" method="post">
+            <input class="resetbutton" style="color: black" type="submit" name="submit" value="Reset" />
     </div>
-<div class="Searchbar">
-    <form action="~/Box/Search" method="post">
-        <input name="weight" />
-        <input name="volume" />
-        <input name="canHoldLiquid" />
-        <input name="cost" />
-        <div class="submitbutton">
-        <input type="submit" name="submit" /></div>
-    </form>
-    <form action="~/Box" method="post">
-        <input type="submit" name="submit" value="reset" />
     </form>
 </div>
 <table class="table">
@@ -44,7 +44,7 @@
 
     @foreach (var item in Model)
     {
-    <tr>
+    <tr class="row-bro">
         <td>
             @Html.DisplayFor(modelItem => item.Weight)
         </td>
