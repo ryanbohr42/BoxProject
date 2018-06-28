@@ -20,7 +20,7 @@ namespace BoxProblem.Data
         [DisplayName("VOLUME")]
         public int Volume { get; set; }
 
-        [DisplayName("CAN HOLD LIQUID")]
+        [DisplayName("CAN HOLD LIQUID?")]
         public bool CanHoldLiquid { get; set; }
 
         [Range(0,1000000)]

@@ -1,0 +1,44 @@
+﻿
+
+#h4 {
+    color: blue;
+
+}
+
+
+.form-group {
+    padding: 10px;
+    color: purple;
+}
+
+
+#header {
+    background-color: white;
+    width: 300px;
+    border: 25px black;
+    padding: 25px;
+    margin: 25px;
+}
+
+.weight {
+    color: aqua;
+}
+
+.Volume {
+    color: #a72057;
+}
+
+.CanHoldLiquid {
+    color: #a72057;
+}
+
+.Cost {
+    color: #a72057;
+}
+
+.InventoryCount {
+    color: #a72057;
+}
+
+
+
