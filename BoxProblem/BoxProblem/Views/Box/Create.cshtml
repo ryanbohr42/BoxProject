@@ -5,85 +5,93 @@
     ViewData["Title"] = "Create";
 }
 
+
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
+<link rel="stylesheet" href="StyleSheet2.css" />
+
+
 
 <div class="form-horizontal">
-    <h4>Student</h4>
-    <hr />
+    <div style="margin-left: 6%">
+        <div style="display: inline-block; width: 25%; margin-right: 3%; ">
+            <hr class="line" />
+            <hr class="line" />
+            <hr class="line" />
+        </div>
+        <div style="display: inline-block; border: 3px solid black; transform: translateY(-30px); padding-left:5%; padding-right:5%;">
+            <h2 class="Name">CREATE</h2>
+        </div>
+
+        <div style="display: inline-block; width: 25%; margin-left: 3%;">
+            <hr class="line" />
+            <hr class="line" />
+            <hr class="line" />
+        </div>
+    </div>
+    <div>
+    </div>
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(model => model.Weight, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Weight, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Weight, "", new { @class = "text-danger" })
+    <div style="margin-left: 25%">
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.Weight, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10" style="width:400px">
+                    @Html.EditorFor(model => model.Weight, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Volume, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Volume, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Volume, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.Volume, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10" style="width:400px">
+                    @Html.EditorFor(model => model.Volume, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Volume, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div class="form-group">
-        @Html.LabelFor(model => model.CanHoldLiquid, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.CanHoldLiquid, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.CanHoldLiquid, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.CanHoldLiquid, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10" style="width:400px">
+                    @Html.EditorFor(model => model.CanHoldLiquid, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CanHoldLiquid, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(model => model.Cost, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.Cost, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.Cost, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10" style="width:400px">
+                    @Html.EditorFor(model => model.Cost, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.InventoryCount, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.InventoryCount, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.InventoryCount, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div style=" color: #a72057">
+                @Html.LabelFor(model => model.InventoryCount, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10" style="width:400px">
+                    @Html.EditorFor(model => model.InventoryCount, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.InventoryCount, "", new { @class = "text-danger" })
+                </div>
+            </div>
         </div>
-    </div>
 
-
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create" class="btn btn-default" />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10" style="margin-left:27%">
+                <input type="submit" value="CREATE" class="btn btn-default" style="background-color: #66a7a7; color: white " />
+            </div>
         </div>
     </div>
 </div>
 }
-
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("BACK TO LIST", "Index")
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <hr style="border-top: dotted 1px; margin-left: 80px; margin-right: 80px "/>
 
