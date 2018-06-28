@@ -18,7 +18,7 @@
 }
 .btn-center {
     font-size: 150%;
-    margin-left: -25%;
+    margin-left: 30%;
     padding: 5px;
     box-sizing: border-box;
     height: 125%;
@@ -63,18 +63,16 @@
         outline: 0;
     }
 .Searchbar{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-left: -35%;
+    width: 200%;
 }
-.1submitbutton {
-    font-size: 150%;
-    padding: 5px;
-    display: inline-block;
-    box-sizing: border-box;
+.center1{
+    margin-right: auto;
+    margin-left: auto;
+    width: 150%;
 }
 .fourth {
-    width: 50%;
+    width: 30%;
     padding: 5px;
     box-sizing: border-box;
     height: 125%;
@@ -94,7 +92,7 @@
     }
 .resetbutton {
     margin-bottom: 5px;
-    width: 50%;
+    width: 25%;
     box-sizing: border-box;
     padding: 5px;
     background-color: transparent;
